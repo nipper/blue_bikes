@@ -81,8 +81,6 @@ server <- function(input, output) {
         
     })
     observe({
-        print(head(trips()))
-        
         mapdeck_update(map_id = "station_counts") %>%
             add_heatmap(
                 data = trips(),
